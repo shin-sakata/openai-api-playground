@@ -1,0 +1,32 @@
+{
+  "name": "openai-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "18.*",
+    "yarn": "1.*"
+  },
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node dist/index.mjs"
+  },
+  "dependencies": {
+    "openai": "^3.2.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@tsconfig/esm": "^1.0.2",
+    "@tsconfig/node18": "^1.0.1",
+    "@tsconfig/strictest": "^2.0.0",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 120
+  }
+}
